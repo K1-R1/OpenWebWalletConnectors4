@@ -37,4 +37,5 @@ yarn-error.log*
 # Smart contracts
 simple_storage
 
-.package-lock.json
+
+package-lock.json
