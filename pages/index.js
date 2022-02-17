@@ -19,5 +19,15 @@ export default function Home() {
       },
     });
 
+  useEffect(() => {
+    if (typeof window.ethereum !== "undefined") {
+      setHasMetamask(true);
+    }
+  });
+
+
+
+
+
   return ();
 }
