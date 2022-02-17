@@ -25,9 +25,23 @@ export default function Home() {
     }
   });
 
+  return (
+    <div>
+      {hasMetamask ? (
+        isWeb3Enabled ? (
+          "Connected! "
+        ) : (
+          <button onClick={() => enableWeb3()}>Connect</button>
+        )
+      ) : (
+        "Please install metamask"
+      )}
 
-
-
-
-  return ();
+      {isWeb3Enabled ? (
+        <button onClick={() => runContractFunction()}>Execute</button>
+      ) : (
+        ""
+      )}
+    </div>
+  );;
 }
