@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [hasMetamask, setHasMetamask] = useState(false);
+  const { enableWeb3, isWeb3Enabled } = useMoralis();
 
   return ();
 }
